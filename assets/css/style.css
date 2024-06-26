@@ -1670,8 +1670,10 @@ body {
   transition: background-color 0.3s ease; /* Transição suave */
 }
 
+
+
 /* Estilos para dark mode */
 body.dark-mode {
   background-color: #333; /* Cor de fundo em modo escuro */
-  color: #fff; /* Cor do texto em modo escuro */
+  color: #333; /* Cor do texto em modo escuro */
 }
