@@ -1663,6 +1663,15 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     height: 2rem;
   }
 }
+/* css dos cards de projetos*/
+.card-img-top {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background-size: cover;
+  background-position: center center;
+}
+
 /* Defina os estilos padrão e os estilos para dark mode aqui */
 body {
   background-color: #fff; /* Cor de fundo padrão */
