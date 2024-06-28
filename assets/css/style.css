@@ -121,7 +121,7 @@ section span {
   font-size: 1.7rem;
   line-height: 130%;
 
-  color: var(--paragraph);
+  color: #fff;
 }
 
 .button {
@@ -1664,25 +1664,66 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 }
 /* css dos cards de projetos*/
+.card {
+  margin-bottom: 5rem;
+}
 .card-img-top {
   width: 100%;
   height: 0;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 49%; /* 16:9 Aspect Ratio */
   background-size: cover;
   background-position: center center;
+}
+.card-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 0.5rem;
+ 
+  border-bottom: 2px solid #67c80c; /* Blue bottom border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-body:first-of-type {
+  padding-bottom: 0;
 }
 
 /* Defina os estilos padrão e os estilos para dark mode aqui */
 body {
   background-color: #fff; /* Cor de fundo padrão */
-  color: #000; /* Cor do texto padrão */
+  
   transition: background-color 0.3s ease; /* Transição suave */
+}
+ section p {
+  color: #fff;
+ }
+.content p{
+  color:#000;
+}
+.card p{
+  color: #fff;
 }
 
 
+.card:hover p{
+  color: #000;
+}
+.card:hover h3{
+  color: #000;
+}
 
 /* Estilos para dark mode */
 body.dark-mode {
   background-color: #333; /* Cor de fundo em modo escuro */
   color: #333; /* Cor do texto em modo escuro */
 }
+body.dark-mode p {
+  
+  color: #fff; /* Cor do texto em modo escuro */
+}
+
+  
+
