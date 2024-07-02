@@ -320,6 +320,7 @@ body.light-mode nav#navigation.scroll a.logo {
 
 nav#navigation .menu ul li a {
   color: #fff;
+  
 }
 
 nav button {
@@ -331,6 +332,7 @@ nav button {
 nav .menu,
 nav .close-menu {
   position: fixed;
+  
 }
 
 /*===== MENU-EXPANDED ==========================================*/
@@ -365,7 +367,7 @@ body.menu-expanded .menu,
 body.menu-expanded nav.scroll .menu {
   top: 0;
   left: 0;
-
+ 
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
@@ -383,12 +385,12 @@ body.menu-expanded nav.scroll .menu {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
+ color:#fff;
   margin: 8rem 0 10rem 0;
-
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 3.1rem;
+align-items: center;
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 1.1rem;
 }
 
 body.menu-expanded nav .logo,
