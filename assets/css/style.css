@@ -293,7 +293,7 @@ nav#navigation a.logo {
 
 body.light-mode nav#navigation a.logo,
 body.light-mode footer a.logo {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 footer a.logo,
@@ -316,10 +316,12 @@ body.light-mode nav#navigation.scroll a.logo {
   color: #000;
 }
 
-/* == == */
+/* == estilo para fonte menu/close menu== */
 
 nav#navigation .menu ul li a {
   color: #fff;
+  font-size: larger;
+  font-family: monospace;
   
 }
 
@@ -353,6 +355,7 @@ body.menu-expanded .open-menu {
   visibility: hidden;
 }
 
+
 body.menu-expanded .menu,
 body.menu-expanded .close-menu {
   opacity: 1;
@@ -385,9 +388,9 @@ body.menu-expanded nav.scroll .menu {
   display: flex;
   flex-direction: column;
   gap: 3rem;
- color:#fff;
+
   margin: 8rem 0 10rem 0;
-align-items: center;
+ align-items: center;
   font-weight: 500;
   font-size: 6rem;
   line-height: 1.1rem;
