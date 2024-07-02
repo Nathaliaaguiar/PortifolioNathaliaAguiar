@@ -150,8 +150,12 @@ section span {
 }
 
 body.light-mode .button,
+body.light-mode p,
+body.light-mode h5,
+ody.light-mode #content p,
 body.light-mode #home h4 {
   filter: brightness(0.8);
+  color:#000;
 }
 
 .button:hover {
@@ -272,7 +276,7 @@ nav.scroll {
 }
 
 body.light-mode nav.scroll {
-  background: rgba(151, 151, 151, 0.5);
+  background: rgba(131, 128, 128, 0.5);
 }
 
 /* LOGO */
@@ -304,7 +308,7 @@ body.menu-expanded nav#navigation a.logo {
 }
 
 body.light-mode nav#navigation a.logo {
-  filter: brightness(0.8);
+  filter: brightness(1);
 }
 
 body.light-mode footer a.logo,
@@ -1690,40 +1694,4 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 .card-body:first-of-type {
   padding-bottom: 0;
 }
-
-/* Defina os estilos padrão e os estilos para dark mode aqui */
-body {
-  background-color: #fff; /* Cor de fundo padrão */
-  
-  transition: background-color 0.3s ease; /* Transição suave */
-}
- section p {
-  color: #fff;
- }
-.content p{
-  color:#000;
-}
-.card p{
-  color: #fff;
-}
-
-
-.card:hover p{
-  color: #000;
-}
-.card:hover h3{
-  color: #000;
-}
-
-/* Estilos para dark mode */
-body.dark-mode {
-  background-color: #333; /* Cor de fundo em modo escuro */
-  color: #333; /* Cor do texto em modo escuro */
-}
-body.dark-mode p {
-  
-  color: #fff; /* Cor do texto em modo escuro */
-}
-
-  
 
