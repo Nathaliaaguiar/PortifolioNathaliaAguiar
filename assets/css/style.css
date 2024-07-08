@@ -75,6 +75,8 @@ body.light-mode {
   padding-inline: 2.4rem;
 }
 
+
+
 ul {
   list-style: none;
 }
@@ -82,7 +84,45 @@ ul {
 a {
   text-decoration: none;
 }
+.card-body {
+  padding: 0;
+}
 
+.card-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Garantir que a lista ocupe toda a largura disponível */
+}
+
+.card-body ul li {
+  margin-bottom: 10px;
+  color: #fff;
+ text-align: left !important;
+}
+
+.card-body ul li::before {
+  content: "• ";
+  color: #00ff00;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+.content h3,
+.content ul li {
+  color: #fff;
+}
+body.light-mode .content h3,
+body.light-mode .card ul li,
+body.light-mode .content ul li {
+  color: #000;
+}
+code{
+  color: #67c80c;
+}
 img {
   max-width: 100%;
   color: var(--paragraph);
@@ -560,7 +600,7 @@ body.light-mode #home img#notebook-2-white {
 #home img#vidro {
   position: absolute;
   z-index: 100;
-  right: -2rem;
+  right: -3rem;
   animation: appear-vidro 1s 2.3s backwards;
 
   filter: contrast(5);
@@ -1384,6 +1424,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   #contact .col-b {
     text-align: center;
+    
   }
 
   /*===== FOOTER ======================================*/
@@ -1544,6 +1585,9 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     padding-inline: 2rem;
   }
 
+  
+  
+
   /*===== HOME ==================================*/
 
   #home .wrapper::before {
@@ -1699,4 +1743,21 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 .card-body:first-of-type {
   padding-bottom: 0;
 }
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #00ff00;
+  color: #1e1e1e;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
+.button-link:hover {
+  background-color: #00cc00;
+  text-decoration: none;
+  color: #1e1e1e;
+}
