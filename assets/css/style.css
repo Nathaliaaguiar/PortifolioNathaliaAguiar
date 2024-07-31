@@ -1708,12 +1708,21 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 
   #contact .col-b img {
-    width: 9rem;
+    width: 2rem;
   }
 
   #contact .col-b::after {
     width: 9rem;
     height: 2rem;
+  }
+}
+/* Media query da imagem da boneca para dispositivos menores */
+@media (max-width: 768px) {
+  #notebook-1,
+  #notebook-2,
+  #notebook-2-white {
+    width: 50% !important; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
   }
 }
 /* css dos cards de projetos*/
