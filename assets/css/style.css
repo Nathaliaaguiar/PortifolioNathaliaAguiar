@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "DM Sans", sans-serif;
 }
 
@@ -70,7 +69,6 @@ body.light-mode {
 
 .wrapper {
   width: min(50rem, 100%);
-
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -295,9 +293,7 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 nav {
   width: 100vw;
   height: var(--nav-height);
-
   display: flex;
-
   position: fixed;
   top: 0;
   z-index: 100;
@@ -344,7 +340,7 @@ body.light-mode.menu-expanded nav#navigation.scroll a.logo {
 }
 
 body.menu-expanded nav#navigation a.logo {
-  opacity: 1;
+  opacity: 0;
 }
 
 body.light-mode nav#navigation a.logo {
@@ -359,7 +355,7 @@ body.light-mode nav#navigation.scroll a.logo {
 /* == estilo para fonte menu/close menu== */
 
 nav#navigation .menu ul li a {
-  color: #fff;
+  color: #ff007f;
   font-size: larger;
   font-family: monospace;
   
@@ -461,13 +457,11 @@ body.menu-expanded button path {
 
 #home .wrapper {
   height: 53rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6rem;
-
   position: relative;
 }
 
@@ -547,19 +541,41 @@ body.menu-expanded button path {
 #home .wrapper::before {
   content: "";
   display: block;
-
   width: 27rem;
   height: 27rem;
-
-  background-color: var(--primary-color);
-  border-radius: 100%;
-
+  background: linear-gradient(135deg, #ff007f 0%, #ff007f 100%);
   position: absolute;
   bottom: -3.1rem;
   z-index: -1;
-
-  animation: appear 1s 500ms backwards;
+  animation: appear 1s 500ms backwards, rotateShape 30s infinite ease-in-out;
+  border-radius: 50% 40% 60% 40% / 30% 50% 30% 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 #home img {
   width: 30rem;
@@ -626,7 +642,7 @@ body.light-mode #home img#notebook-2-white {
   }
 }
 
-/*===== ABOUT =================================================*/
+/*===== Sobre mim=================================================*/
 
 #about {
   text-align: left;
@@ -650,13 +666,15 @@ body.light-mode #home img#notebook-2-white {
   text-align: left;
 }
 
-#about img {
-  width: 38rem;
-
-  border-radius: 2rem;
-  box-shadow: 0 0 2rem black;
-
+ 
+ #about img {
+  width: 50rem;
+  border-radius: 30% 70% 70% 30% / 30% 49% 51% 70%  ;
+  box-shadow: 0 0 2rem #ff007f;
   transition: 600ms;
+  animation: irregularBorder 8s infinite;
+  
+  
 }
 
 /*===== PROJECTS ===============================================*/
