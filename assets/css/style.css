@@ -9,9 +9,9 @@
 }
 
 :root {
-  --hue: 90;
-  --primary-color: hsl(var(--hue), 92%, 43%);
-  --primary-hover: hsl(var(--hue), 92%, 33%);
+  --hue: 330;
+  --primary-color: hsl(var(--hue), 100%, 50%);
+  --primary-hover: hsl(var(--hue), 100%, 40%);
   --secundary-color: hsl(0, 0%, 5%);
   --third-color: hsla(0, 0%, 100%, 0.1);
   --bg-color: hsl(0, 0%, 8%);
@@ -103,7 +103,7 @@ a {
 
 .card-body ul li::before {
   content: "• ";
-  color: #00ff00;
+  color: #ff007f;
   font-weight: bold;
   display: inline-block; 
   width: 1em;
@@ -121,7 +121,7 @@ body.light-mode .content ul li {
   color: #000;
 }
 code{
-  color: #67c80c;
+  color: #ff007f;
 }
 img {
   max-width: 100%;
@@ -1721,7 +1721,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   #notebook-1,
   #notebook-2,
   #notebook-2-white {
-    width: 50% !important; /* Ajuste o tamanho conforme necessário */
+    width: 50% !important; 
     height: auto; /* Mantém a proporção da imagem */
   }
 }
@@ -1748,7 +1748,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   text-transform: uppercase;
   margin-bottom: 0;
   padding: 0.5rem;
-  border-bottom: 2px solid #67c80c; /* Blue bottom border */
+  border-bottom: 2px solid #ff007f; /* Blue bottom border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card-body {
@@ -1761,7 +1761,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   display: inline-block;
   padding: 10px 20px;
   margin-top: auto; /* Empurra o botão para o final do cartão */
-  background-color: #00ff00;
+  background-color: #ff007f;
   color: #1e1e1e;
   text-align: center;
   border-radius: 5px;
@@ -1771,7 +1771,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 .button-link:hover {
-  background-color: #00cc00;
+  background-color: #ff007f;
   text-decoration: none;
   color: #1e1e1e;
 }
